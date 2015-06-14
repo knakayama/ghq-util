@@ -53,7 +53,7 @@ Run 'ghu COMMAND -h' for more information on a command.
 
 # License
 
-[MIT](https://github.com/knakayama/ghq-utils/blob/master/LICENSE)
+[MIT](https://github.com/knakayama/ghq-util/blob/master/LICENSE)
 
 # Author
 
