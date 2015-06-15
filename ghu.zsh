@@ -278,19 +278,22 @@ _ghu() {
 
   __rm() {
     _arguments \
-      '-f[Force remove repo(s)]'
+      '-f[Force remove repo(s)]' \
+      '-h[Print help message]'
   }
 
   __mk() {
     _arguments \
       '-u[(local user) Git user name]' \
-      '-g[(github.com) Git server hostname]'
+      '-g[(github.com) Git server hostname]' \
+      '-h[Print help message]'
   }
 
   __for() {
     _arguments \
       '-g[Git commands]' \
-      '-c[Shell commands]'
+      '-c[Shell commands]' \
+      '-h[Print help message]'
   }
 
   _arguments '*:: :->command'
