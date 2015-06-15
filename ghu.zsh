@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-ghu-rm() {
+-ghu-rm() {
   -ghu-rm-usage() {
     cat <<'EOT'
 Usage: ghu rm [-f] [-h]
@@ -115,7 +115,7 @@ EOT
   -ghu-rm-each-repo 3 3< <( ghq list --full-path | peco )
 }
 
-ghu-mk() {
+-ghu-mk() {
   -ghu-mk-usage() {
     cat <<'EOT'
 Usage: ghu mk -u <user> -g <git server> <repository> [-h]
@@ -171,7 +171,7 @@ EOT
   fi
 }
 
-ghu-for() {
+-ghu-for() {
   -ghu-for-usage() {
     cat <<'EOT'
 Usage: ghu for {-g <git command>|-c <shell command>} [-h]
@@ -255,8 +255,8 @@ EOT
   done
 
   local cmd="$1"
-  if functions "ghu-${cmd}" &>/dev/null; then
-    "ghu-${cmd}" "$@"
+  if functions -- -ghu-${cmd} &>/dev/null; then
+    -ghu-${cmd} "$@"
   else
     if [[ "$@" =~ "-h" ]]; then
       -ghu-usage
