@@ -118,7 +118,7 @@ EOT
 -ghu-mk() {
   -ghu-mk-usage() {
     cat <<'EOT'
-Usage: ghu mk -u <user> -g <git server> <repository> [-h]
+Usage: ghu mk [-u <user>] [-g <git server>] <repository> [-h]
 
   -h                  Print this help
   -u <user>           Specify your git user name (default local user name)
