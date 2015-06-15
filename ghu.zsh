@@ -283,14 +283,14 @@ _ghu() {
 
   __mk() {
     _arguments \
-      '-u=[(local user) Git user name]' \
-      '-g=[(github.com) Git server hostname]'
+      '-u[(local user) Git user name]' \
+      '-g[(github.com) Git server hostname]'
   }
 
   __for() {
     _arguments \
-      '-g=[Git commands]' \
-      '-c=[Shell commands]'
+      '-g[Git commands]' \
+      '-c[Shell commands]'
   }
 
   _arguments '*:: :->command'
