@@ -5,6 +5,7 @@ ghq utility
 
 # Requirements
 
+1. [zsh](http://www.zsh.org/)
 1. [ghq](https://github.com/motemen/ghq)
 1. [peco](https://github.com/peco/peco)
 
