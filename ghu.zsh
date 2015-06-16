@@ -153,6 +153,11 @@ EOT
   done
   shift $(( OPTIND - 1 ))
 
+  if [[ $# -ne 1 ]]; then
+    -ghu-mk-usage 1>&2
+    return 1
+  fi
+
   local repository="$1"
   if [[ -z "$repository" ]]; then
     -ghu-mk-usage
