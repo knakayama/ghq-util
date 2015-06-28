@@ -228,7 +228,7 @@ EOT
       if [[ -n "$git_cmd" ]]; then
         git "$git_cmd"
       else
-        $shell_cmd
+        sh -c "$shell_cmd"
       fi
     )
   done
